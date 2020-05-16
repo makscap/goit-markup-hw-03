@@ -188,9 +188,6 @@ body {
   border: 1px solid var(--text-white);
 }
 
-button-blue {
-}
-
 /* Section Company */
 .section-title {
   text-align: center;
@@ -255,7 +252,7 @@ button-blue {
 /* people */
 .people {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .people .item + .item {
   margin-left: 30px;
@@ -314,7 +311,17 @@ button-blue {
 }
 
 /* Футер */
+.foot-nav-flex {
+  display: flex;
+  justify-content: flex-end;
+}
 
+.foot-buttons {
+  margin-left: auto;
+}
+.block-list {
+  display: block;
+}
 .footlogo-studio {
   color: var(--text-white);
 }
@@ -348,6 +355,7 @@ button-blue {
   font-weight: bold;
   font-size: 15px;
   line-height: 1.6;
+  margin: 0px;
 }
 /* 
 .foot-title {
