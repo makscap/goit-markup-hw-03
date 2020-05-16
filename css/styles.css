@@ -311,14 +311,33 @@ body {
 }
 
 /* Футер */
+
+.logo-f {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  display: inline-block;
+}
+
 .foot-nav-flex {
   display: flex;
-  justify-content: flex-end;
+}
+.foot-nav-flex .foot-section + .foot-section {
+  margin-left: 20px;
 }
 
 .foot-buttons {
-  margin-left: auto;
+  margin-left: 70px;
 }
+.foot-buttons .button {
+  margin-bottom: 16px;
+}
+/* foot-section .foot-buttons + .foot-buttons {
+  margin-bottom: 20px;
+} */
 .block-list {
   display: block;
 }
@@ -332,6 +351,7 @@ body {
   font-size: 22px;
   line-height: 1.18;
   text-decoration: none;
+  margin-right: 520px;
 }
 .foot-city {
   color: var(--text-white);
@@ -357,6 +377,7 @@ body {
   line-height: 1.6;
   margin: 0px;
 }
+
 /* 
 .foot-title {
   color: var(--text-white);
@@ -373,8 +394,6 @@ body {
 .button-login {
   color: var(--text-blue);
   background-color: var(--text-white);
-}
-.foot-auth {
 }
 
 .foot-auth .link {
@@ -398,12 +417,27 @@ body {
 .copyright {
   color: var(--text-copyright);
   font-size: 12px;
+  text-align: left;
 }
-
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.label {
+  text-align: right;
+  margin-left: 700px;
+}
 .social > .label {
   color: var(--text-copyright);
   font-size: 15px;
   line-height: 1.6;
+}
+.foot-item {
+  display: flex;
+}
+.foot-item .item + .item {
+  margin-left: 20px;
 }
 
 .carusel-p {
