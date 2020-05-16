@@ -6,19 +6,32 @@
   --text-grey-opac: rgba(255, 255, 255, 0.6);
   --text-copyright: rgba(255, 255, 255, 0.4);
   --text-button-portfolio: #f5f4fa;
+  --border: #afb1b8;
 }
 
 body {
-  background-color: var(--text-white);
+  background-color: burlywood;
   color: var(--text-grey);
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
 }
 .list {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 1280px;
+  outline: 2px solid tomato;
 }
 
 /* Logo */
+
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: bold;
@@ -26,16 +39,33 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  display: inline-block;
 }
 .logo-web {
   color: var(--text-blue);
 }
 .logo-studio {
-  color: var(--text-white);
+  color: var(--text-black);
+}
+/* Main NAV */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  margin-left: 86px;
 }
 
-/* Site nav */
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--text-black);
   font-weight: 500;
   font-size: 14px;
@@ -51,6 +81,23 @@ body {
 
 .site-nav .link.current {
   color: var(--text-blue);
+}
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .nav-contact {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.auth-nav .item + .item {
+  margin-left: 30px;
+}
+.cont-nav {
+  display: flex;
+}
+.cont-nav .item + .item {
+  margin-left: 30px;
 }
 /* Navigation contacts */
 
@@ -68,6 +115,15 @@ body {
   color: var(--text-blue);
 }
 
+.flex-contact {
+  display: flex;
+  margin-left: 360px;
+}
+
+.flex-contact .item + .item {
+  margin-left: 50px;
+}
+
 /* Main */
 .hero {
   color: var(--text-white);
@@ -75,6 +131,8 @@ body {
   letter-spacing: 0.06em;
 }
 .hero-title {
+  margin-top: 0px;
+  margin-bottom: 46px;
   color: var(--text-white);
   font-weight: 900;
   font-size: 44px;
@@ -82,6 +140,11 @@ body {
   text-transform: uppercase;
 }
 .button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 1px solid transparent;
   color: var(--text-white);
   background-color: var(--text-blue);
   font-family: inherit;
@@ -89,13 +152,58 @@ body {
   font-size: 16px;
   line-height: 1.87;
   text-decoration: none;
+  text-align: center;
+
   /* /* display: flex;
   align-items: center; */
+}
+.button:hover,
+.button:focus {
+  background-color: var(--text-white);
+  color: var(--text-blue);
+  border: 1px solid var(--text-blue);
+}
+.button-log {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 1px solid transparent;
+  color: var(--text-blue);
+  background-color: var(--text-white);
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+  text-align: center;
+
+  /* /* display: flex;
+  align-items: center; */
+}
+.button-log:hover,
+.button-log:focus {
+  background-color: var(--text-blue);
+  color: var(--text-white);
+  border: 1px solid var(--text-white);
+}
+
+button-blue {
 }
 
 /* Section Company */
 .section-title {
+  text-align: center;
   display: none;
+}
+.work-list {
+  display: flex;
+  align-items: center;
+}
+
+.work-list p {
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .section-list {
@@ -104,10 +212,16 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .section-p {
   font-size: 14px;
   line-height: 1.71;
+}
+.img {
+  margin-right: 30px;
+  background-color: chocolate;
 }
 
 .img:hover,
@@ -115,14 +229,15 @@ body {
   background-color: var(--text-blue);
 }
 /* Чем мы занимаемся */
-
-.about {
-  color: var(--text-black);
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+.spisok-onas {
+  display: flex;
+  justify-content: center;
 }
+
+.spisok-onas .list-app + .list-app {
+  margin-left: 30px;
+}
+
 .menu-product {
   color: var(--text-white);
   font-weight: bold;
@@ -130,9 +245,23 @@ body {
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 27px;
+  margin-bottom: 27px;
 }
 .section-list-three {
   color: var(--text-black);
+}
+
+/* people */
+.people {
+  display: flex;
+  justify-content: center;
+}
+.people .item + .item {
+  margin-left: 30px;
+}
+.item {
+  text-align: center;
 }
 
 .menu-people {
@@ -148,8 +277,48 @@ body {
   line-height: 1.19;
   text-align: center;
 }
+.about {
+  color: var(--text-black);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.list-logo {
+  display: flex;
+  justify-content: space-between;
+}
+.item-company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 90px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: auto;
+
+  /* /* border: 1px solid ; */
+}
+
+.item-company:hover,
+.item-company:focus {
+  border: 1px solid var(--text-blue);
+}
+.list-logo .item-company + .item-company {
+  margin-left: 30px;
+}
 
 /* Футер */
+
+.footlogo-studio {
+  color: var(--text-white);
+}
+
 .foot-logo {
   font-family: Raleway, sans-serif;
   font-weight: bold;
@@ -197,6 +366,8 @@ body {
   color: var(--text-blue);
   background-color: var(--text-white);
 }
+.foot-auth {
+}
 
 .foot-auth .link {
   color: var(--text-grey);
@@ -210,6 +381,10 @@ body {
 .foot-auth .link:hover,
 .foot-auth .link:focus {
   color: var(--text-blue);
+}
+.test {
+  display: flex;
+  justify-content: space-between;
 }
 
 .copyright {
