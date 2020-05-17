@@ -236,10 +236,10 @@ body {
   background-color: var(--text-blue);
 }
 .color {
-  background-color: var(--text-button-portfolio);
+  /* background-color: var(--text-button-portfolio);
     margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
+  margin-right: auto; */
+  
 }
 /* Чем мы занимаемся */
 .spisok-onas {
@@ -269,6 +269,8 @@ body {
 .people {
   display: flex;
   justify-content: center;
+    background-color: var(--text-button-portfolio);
+
   
   
 }
@@ -360,6 +362,7 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 56px;
+      background-color: var(--foot-bg);
   }
   .foot-nav-flex .foot-section + .foot-section {
     margin-left: 20px;
@@ -525,7 +528,7 @@ body {
   margin-bottom: 32px;
 }
 .foot-bg {
-  background-color: var(--foot-bg);
+  /* background-color: var(--foot-bg); */
 
 
 
