@@ -363,7 +363,7 @@ body {
     justify-content: center;
     padding-top: 56px;
       background-color: var(--foot-bg);
-background-size: cover;
+background-size: 100% auto;
   }
   .foot-nav-flex .foot-section + .foot-section {
     margin-left: 20px;
