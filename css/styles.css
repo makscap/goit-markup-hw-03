@@ -355,6 +355,7 @@ body {
 
   .foot-nav-flex {
     display: flex;
+    justify-content: center;
     padding-top: 56px;
   }
   .foot-nav-flex .foot-section + .foot-section {
@@ -522,6 +523,10 @@ body {
 }
 .foot-bg {
   background-color: var(--foot-bg);
+
+
+
+
 }
 /* Portfolio */
 .portfolio-buttons {
