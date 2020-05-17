@@ -239,6 +239,7 @@ body {
   background-color: var(--text-button-portfolio);
     margin-left: auto;
   margin-right: auto;
+  background-size: cover;
 }
 /* Чем мы занимаемся */
 .spisok-onas {
