@@ -137,6 +137,7 @@ body {
   color: var(--text-white);
   text-align: center;
   letter-spacing: 0.06em;
+  padding-bottom: 200px;
 }
 .hero-title {
   padding-top: 200px;
@@ -162,7 +163,7 @@ body {
   line-height: 1.87;
   text-decoration: none;
   text-align: center;
-  padding-bottom: 200px;
+
 
   /* /* display: flex;
   align-items: center; */
