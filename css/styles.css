@@ -146,6 +146,7 @@ body {
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
+  margin: 0px;
 }
 .button {
   display: inline-block;
