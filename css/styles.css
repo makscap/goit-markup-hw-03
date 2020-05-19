@@ -20,6 +20,20 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+
+
+
+}
 .list {
   list-style: none;
   padding: 0px;
@@ -512,6 +526,11 @@ margin: 0px;
     text-align: center;
     border-top: 1px solid var(--foot-line);
   }
+    .copyrigth-border p {
+padding-top: 18px;
+padding-bottom: 21px;
+margin: 0px;
+    }
   .social {
     display: flex;
     align-items: center;
@@ -625,6 +644,9 @@ footer {
 
 .foot-item .item + .item {
     margin-left: 20px;
+}
+.card-img {
+  display: block;
 }
 /* .item .icon-links + .icon-links {
   margin-left: 30px;
