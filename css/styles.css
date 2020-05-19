@@ -139,8 +139,8 @@ body {
   letter-spacing: 0.06em;
 }
 .hero-title {
-  margin-top: 200px;
-  margin-bottom: 46px;
+  padding-top: 200px;
+  padding-bottom: 46px;
   color: var(--text-white);
   font-weight: 900;
   font-size: 44px;
