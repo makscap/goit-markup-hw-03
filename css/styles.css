@@ -305,6 +305,11 @@ img {
   display: flex;
   justify-content: center;
 }
+
+.social-icon {
+  display: flex;
+  justify-content: space-evenly;
+}
 /* .people .item {
     margin-left: 0px;
 }
