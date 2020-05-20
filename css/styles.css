@@ -243,7 +243,11 @@ img {
 }
 
 .work-list .img {
-  padding-bottom: 30px;
+  min-width: 270px;
+  background-color: var(--text-button-portfolio);
+  padding: 25px 100px;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 .section-list {
   color: var(--text-black);
