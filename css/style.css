@@ -559,12 +559,14 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin: 0px;
 }
 .card-set__text {
   color: var(--text-grey);
   font-size: 16px;
   line-height: 1.87;
   padding-bottom: 20px;
+  margin: 0px;
 }
 
 /* .footer-nav {
