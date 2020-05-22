@@ -386,7 +386,6 @@ img {
 
 .page-footer {
   background-color: var(--foot-bg);
-  background-size: cover;
 }
 .page-footer__content {
   display: flex;
